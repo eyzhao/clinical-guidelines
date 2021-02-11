@@ -1,0 +1,33 @@
+@media print {
+    .details {
+        padding-top: 2cm;
+        padding-bottom: 2cm; 
+        padding-right: 2cm 
+    }
+}
+
+body {
+    margin: 0px;
+    font-family: lato;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1260px 500px;
+  grid-template-rows: 1500px;
+  column-gap: 20px;
+  grid-template-areas:
+    "workspace sliders"
+}
+
+#workspace {
+  grid-area: workspace;
+}
+
+#sliders {
+  grid-area: sliders;
+}
+
+.mutation_label {
+  font-style: italic;
+}
